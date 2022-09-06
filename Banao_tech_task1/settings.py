@@ -133,3 +133,6 @@ MEDIA_URL = '/media/'
 # whitenoise settings
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
