@@ -93,15 +93,15 @@ WSGI_APPLICATION = 'Banao_tech_task1.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'banao_tech_db',
-        'USER': 'postgres',
-        'PASSWORD': 'jay',
-        'HOST': 'localhost'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'banao_tech_db',
+#         'USER': 'postgres',
+#         'PASSWORD': 'jay',
+#         'HOST': 'localhost'
+#     }
+# }
 
 import dj_database_url
 DATABASES = {'default': dj_database_url.config(default='postgres://postgres:jay@localhost/banao_tech_db')}
